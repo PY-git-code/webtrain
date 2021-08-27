@@ -1,0 +1,295 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height:100%;
+    width:100%;
+}
+body{
+    background-color:#CCF0EE;
+}
+.login {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+header{
+    display:flex;
+    height:15%;
+    width:100%;
+    transition: 1s;
+    background-color:#D1D4FC;
+    box-shadow: 0 20px 20px #D1D4FC; /*改成0*/
+    flex-wrap: wrap;
+    position:sticky;
+    top:0;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    width:100%;
+    height:90%;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    font-size: 30px;
+    padding:0 0 3% 0;
+}
+.header>img{
+    height:100%;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    border-radius:20px ;
+    width:80%;
+    justify-items: center;
+}
+.menu ul li{
+    width:20%;
+}
+.menu ul li a{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    border-radius:2px;
+    transition: 0.5s;
+    padding:0.1%;
+}
+.menu ul a:hover{
+    background-color: #8babfd;
+    box-shadow: 0 0 5px black;
+}
+.menu ul li a{
+    color:rgb(93, 91, 91);
+    width:100%;
+    text-align:center;
+}
+
+
+input[type=password],
+input[type=date],
+input[type=text],
+input[type=email] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    width: 20%;
+    color: black;
+    background-color: rgb(221, 219, 219);
+    padding: 14px 20px;
+    margin: 10px auto 20px auto;
+    border: none;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.login_table>input[type=submit] {
+    width:100%;
+    color: black;
+    background-color: rgb(221, 219, 219);
+    padding: 14px 20px;
+    margin: 10px auto 20px auto;
+    border: none;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+.btn>a {
+    padding:0 3%;
+    float:right;
+}
+
+.update_log input{
+    transition: 0.5s;
+}
+
+input:hover{
+    box-shadow:0 0 10px lightskyblue;
+}
+
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height:90%;
+    font-size:16px;
+}
+
+/* 會員資料及修改
+.mdata{
+    border: 2px solid lightskyblue;
+    border-radius: 20px;
+    display: flex;
+    margin:2% 10%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.user_data{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+span.title{
+    display: inline-block;
+    height:10%;
+    position:relative;
+    font-size: 1em;
+    top:-100%;
+    left:5%;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    color:blue;
+}
+
+.mdata hr{
+    width:0;
+    margin: 0;
+    padding: 0;
+}
+
+.update_log{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+/*前端*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin:5%;
+    padding:0 0 15% 0;
+}
+
+.pd_main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height:100%;
+}
+
+.pd{
+    text-align: center;
+    border: 1px solid lightslategray;
+    border-radius: 10px;
+    transition: 0.5s;
+    padding:1%;
+    margin:1% 2% 1% 2%;
+}
+
+.pd:hover{
+    box-shadow: 0 0 5px lightslategray;
+}
+
+.pd img{
+    width:70%;
+}
+.pd p{
+   color: #1c8f33;
+}
+.txt{
+    color: blue;
+}
+.price{
+    color:red;
+    text-decoration: line-through;
+}
+footer{
+    background-color: #9BD8F2;
+    height:10%;
+    box-shadow: 0px 0px 20px #9BD8F2;
+    color:blue;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+}
+.footer{
+    display:flex;
+    flex-wrap: wrap;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+.footer p{
+    display:block;
+}
+
+[class*="col-"]{
+    width:100%;
+}
+
+@media only screen and (max-width: 899px){
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    footer{
+        margin:0 0 2% 0;
+        height:30%;
+    }
+    .btn{
+        height:10%;
+    }
+    
+}
+@media only screen and (min-width:900px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    footer{
+        margin:0 0 10% 0;
+    }
+}

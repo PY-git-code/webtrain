@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    height:100%;
+}
+header{
+    background-color:#D1D4FC;
+    height:13%;
+    box-shadow: 0 20px 20px #D1D4FC;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header p{
+    color:black;
+    font-size: 30px;
+}
+
+.container>hr{
+    border: 1px solid rgba(5, 95, 151, 0.548);
+}
+
+.container-1 {
+    display: flex;
+    height:82%;
+}
+
+
+aside{
+    padding-top:3%;
+    text-align: center;
+    background:rgb(203, 226, 255);
+}
+
+aside li{
+    list-style: none;
+}
+aside a{
+    padding:3% 0;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    width:100%;
+    transition:0.3s;
+    color:blue;
+}
+
+aside a:hover{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 23px;
+    background-color: gray;
+    color:white;
+}
+
+/* 表格 */
+main{
+    font-family:'DFKai-sb';
+    border-left: 1px solid rgba(5, 95, 151, 0.548);
+    padding-bottom: 1%;
+    height:100%;
+    overflow:auto;
+}
+table{
+    background-color: #9FBEF1;
+    color:white;
+    table-layout:fixed;
+    width:95%;
+    height: 100%;
+}
+table td{
+    background-color: #AF92E9;
+}
+table a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height:100%;
+    width:100%;
+    transition:0.5s;
+}
+img{
+    width:100%;
+}
+li{
+    list-style-type: none;
+}
+table a:hover{
+    color:white;
+}
+
+footer{
+    position: fixed;
+    bottom:0px;
+    background-color: #9BD8F2;
+    height:5%;
+    box-shadow: 20px 0px 20px #9BD8F2;
+    color:blue;
+    font-size: 8px;
+    text-shadow:0 10px 30px red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 會員資料及修改 */
+.member{
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    height:100%;
+}
+
+.user_data{
+    display:flex;
+    align-items: center;
+    justify-content: center
+}
+.user_data li{
+    font-size: 20px;
+    padding:3%;
+}
+
+div.title{
+    display: inline-block;
+    height:0;
+    position:relative;
+    font-size: 1em;
+    top:-10px;
+    left:5%;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    color:blue;
+}
+
+
+.update_log{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.update_log input[type=password],
+.update_log input[type=date],
+.update_log input[type=text],
+.update_log input[type=email] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+input[type=password],
+input[type=date],
+input[type=text],
+input[type=email] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    color: black;
+    background-color: rgb(221, 219, 219);
+    padding: 14px 20px;
+    margin: 10px auto 20px auto;
+    border: none;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn_in,
+.btn_out{
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
